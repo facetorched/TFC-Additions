@@ -1,17 +1,14 @@
 package org.rbh.tfcadditions.Tools;
 
-import com.bioxx.tfc.Blocks.Terrain.BlockStone;
-import com.bioxx.tfc.Core.TFC_Core;
-import com.bioxx.tfc.api.TFCBlocks;
-import com.bioxx.tfc.api.Tools.ChiselMode;
+import com.dunk.tfc.Blocks.Terrain.BlockStone;
+import com.dunk.tfc.Core.TFC_Core;
+import com.dunk.tfc.api.Tools.ChiselMode;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import org.rbh.tfcadditions.Blocks.BlockSetup;
 import org.rbh.tfcadditions.Reference.Reference;
-import org.rbh.tfcadditions.Utility.CarpentersBlocksHandler;
 
 /**
  * Created by rbh on 03.08.2015.
@@ -78,7 +75,6 @@ public class ChiselMode_Slope extends ChiselMode {
         int hasChisel = hasChisel(player);
         if( hasChisel >= 0 ){
             if(id instanceof BlockStone){
-                world.setBlock(x, y, z, CarpentersBlocksHandler.Slope, 0, 0x2);
                 Block block = world.getBlock(x, y, z);
                 block.onBlockPlaced(world, x, y, z, side, hitX, hitY, hitZ, meta);
                 block.onBlockPlacedBy(world, x, y ,z, player, itemStack);

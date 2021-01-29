@@ -1,8 +1,8 @@
 package org.rbh.tfcadditions.Blocks;
 
-import com.bioxx.tfc.Blocks.BlockTerra;
-import com.bioxx.tfc.Items.Tools.ItemHammer;
-import com.bioxx.tfc.api.Tools.IToolChisel;
+import com.dunk.tfc.Blocks.BlockTerra;
+import com.dunk.tfc.Items.Tools.ItemHammer;
+import com.dunk.tfc.api.Tools.IToolChisel;
 import team.chisel.ctmlib.ICTMBlock;
 import team.chisel.ctmlib.ISubmapManager;
 import cpw.mods.fml.relauncher.Side;

@@ -1,8 +1,8 @@
 package org.rbh.tfcadditions.Items;
 
-import com.bioxx.tfc.Items.ItemTerra;
-import com.bioxx.tfc.api.Enums.EnumSize;
-import com.bioxx.tfc.api.Enums.EnumWeight;
+import com.dunk.tfc.Items.ItemTerra;
+import com.dunk.tfc.api.Enums.EnumSize;
+import com.dunk.tfc.api.Enums.EnumWeight;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

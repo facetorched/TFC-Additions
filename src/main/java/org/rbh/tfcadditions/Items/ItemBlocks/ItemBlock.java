@@ -1,6 +1,6 @@
 package org.rbh.tfcadditions.Items.ItemBlocks;
 
-import com.bioxx.tfc.Items.ItemBlocks.ItemTerraBlock;
+import com.dunk.tfc.Items.ItemBlocks.ItemTerraBlock;
 import net.minecraft.block.Block;
 import org.rbh.tfcadditions.Blocks.Dent.BlockIGEXDent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockIGINDent;

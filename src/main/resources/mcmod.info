@@ -4,8 +4,8 @@
     "modid": "tfcadditions",
     "name": "TFC-Additions",
     "description": "Additions to TerraFirmaCraft",
-    "version": "${mod_version}",
-    "mcversion": "${minecraft_version}",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
     "url" : "http://interburn.org",
     "updateUrl": "http://interburn.org",
     "authorList": [ "raymondbh" ],
@@ -13,8 +13,8 @@
     "logoFile": "",
     "screenshots": [  ],
     "parent": "",
-    "requiredMods": ["Forge@[10.13.4.1558,)", "terrafirmacraft@[0.79.23,)" ],
-    "dependencies": ["terrafirmacraft", "CarpentersBlocks", "NotEnoughItems"],
+    "requiredMods": ["Forge", "terrafirmacraftplus" ],
+    "dependencies": ["terrafirmacraftplus", "NotEnoughItems"],
     "dependants": [  ],
     "useDependencyInformation": "true"
   }]

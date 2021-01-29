@@ -1,8 +1,8 @@
 package org.rbh.tfcadditions.Items.Tools;
 
-import com.bioxx.tfc.Items.Tools.ItemTerraTool;
-import com.bioxx.tfc.api.Enums.EnumItemReach;
-import com.bioxx.tfc.api.Enums.EnumSize;
+import com.dunk.tfc.Items.Tools.ItemTerraTool;
+import com.dunk.tfc.api.Enums.EnumItemReach;
+import com.dunk.tfc.api.Enums.EnumSize;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;

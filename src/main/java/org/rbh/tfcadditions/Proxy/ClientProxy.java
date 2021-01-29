@@ -1,6 +1,6 @@
 package org.rbh.tfcadditions.Proxy;
 
-import com.bioxx.tfc.api.Util.KeyBindings;
+import com.dunk.tfc.api.Util.KeyBindings;
 import team.chisel.ctmlib.CTMRenderer;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -42,7 +42,7 @@ public class ClientProxy extends CommonProxy {
         //    CarpentersBlocksHandler.Init();
 
         //Hide vanilla blocks in NEI
-        if(NotEnoughItemsHandler.isLoaded() && ConfigHandler.HideNEI == true)
+        if(NotEnoughItemsHandler.isLoaded() && ConfigHandler.HideNEI)
             NotEnoughItemsHandler.HideNEIItems();
 
         //Setup Creative Tab Icon
@@ -54,13 +54,13 @@ public class ClientProxy extends CommonProxy {
         super.postInit(event);
     }
 
-    public void registerKeys() {
+    private void registerKeys() {
         KeyBindings.addKeyBinding(KeyBindingHandler.Key_PrevChiselMode);
         KeyBindings.addIsRepeating(false);
         uploadKeyBindingsToGame();
     }
 
-    public void uploadKeyBindingsToGame()
+    private void uploadKeyBindingsToGame()
     {
         GameSettings settings = Minecraft.getMinecraft().gameSettings;
         KeyBinding[] tfcKeyBindings = KeyBindings.gatherKeyBindings();
@@ -71,7 +71,7 @@ public class ClientProxy extends CommonProxy {
         settings.loadOptions();
     }
 
-    public void registerKeyBindingHandler()
+    private void registerKeyBindingHandler()
     {
         FMLCommonHandler.instance().bus().register(new KeyBindingHandler());
     }

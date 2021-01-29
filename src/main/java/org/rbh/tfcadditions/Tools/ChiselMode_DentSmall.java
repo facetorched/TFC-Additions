@@ -1,9 +1,9 @@
 package org.rbh.tfcadditions.Tools;
 
-import com.bioxx.tfc.Blocks.Terrain.BlockStone;
-import com.bioxx.tfc.Core.TFC_Core;
-import com.bioxx.tfc.api.TFCBlocks;
-import com.bioxx.tfc.api.Tools.ChiselMode;
+import com.dunk.tfc.Blocks.Terrain.BlockStone;
+import com.dunk.tfc.Core.TFC_Core;
+import com.dunk.tfc.api.TFCBlocks;
+import com.dunk.tfc.api.Tools.ChiselMode;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
