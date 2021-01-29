@@ -7,7 +7,11 @@ public class Reference {
     public static final String ModID = "tfcadditions";
     public static final String ModName = "TFC-Additions";
 
-    public static final String ModVersion = "@MODVERSION@";
+    public static final int VersionMajor = 1;
+    public static final int VersionMinor = 0;
+    public static final int VersionRevision = 5;
+
+    public static final String ModVersion = VersionMajor + "." + VersionMinor + "." + VersionRevision;
     //public static final String TFCVersion = "@TFCVERSION@";
 
     //public static final String ModDependencies = "required-after:terrafirmacraft;required-after:CarpentersBlocks;required-after:NotEnoughItems";
