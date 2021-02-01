@@ -1,6 +1,5 @@
+[
 {
-  "modListVersion": 2,
-  "modList": [{
     "modid": "tfcadditions",
     "name": "TFC-Additions",
     "description": "Additions to TerraFirmaCraft",
@@ -8,7 +7,7 @@
     "mcversion": "${mcversion}",
     "url" : "http://interburn.org",
     "updateUrl": "http://interburn.org",
-    "authorList": [ "raymondbh" ],
+    "authorList": [ "raymondbh", "nuckable" ],
     "credits": "http://interburn.org",
     "logoFile": "",
     "screenshots": [  ],
@@ -17,5 +16,5 @@
     "dependencies": ["terrafirmacraftplus", "NotEnoughItems", "CTMLib"],
     "dependants": [  ],
     "useDependencyInformation": "true"
-  }]
 }
+]
