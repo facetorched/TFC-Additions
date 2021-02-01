@@ -2,6 +2,7 @@ package org.rbh.tfcadditions.Blocks;
 
 import com.dunk.tfc.Blocks.BlockTerra;
 import com.dunk.tfc.Items.Tools.ItemHammer;
+import com.dunk.tfc.api.Constant.Global;
 import com.dunk.tfc.api.Tools.IToolChisel;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -100,11 +101,11 @@ public class BlockPlanks extends BlockTerra {
         String[] MetaNames;
         if(bracket == NameType.FIRST_BRACKET){
             MetaNames = new String[16];
-            System.arraycopy(Names.WOOD_ALL, 0, MetaNames, 0, 16);
+            System.arraycopy(Global.WOOD_ALL, 0, MetaNames, 0, 16);
             return MetaNames;
         } else if(bracket == NameType.SECOND_BRACKET){
-            MetaNames = new String[Names.WOOD_ALL.length - 16];
-            System.arraycopy(Names.WOOD_ALL, 16, MetaNames, 0, Names.WOOD_ALL.length - 16);
+            MetaNames = new String[Global.WOOD_ALL.length - 16];
+            System.arraycopy(Global.WOOD_ALL, 16, MetaNames, 0, Global.WOOD_ALL.length - 16);
             return MetaNames;
         }
         return null;

@@ -1,6 +1,7 @@
 package org.rbh.tfcadditions.Items.ItemBlocks;
 
 import com.dunk.tfc.Items.ItemBlocks.ItemTerraBlock;
+import com.dunk.tfc.api.Constant.Global;
 import net.minecraft.block.Block;
 import org.rbh.tfcadditions.Blocks.Dent.BlockIGEXDent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockIGINDent;
@@ -27,6 +28,6 @@ public class ItemBlock extends ItemTerraBlock {
         else if(block instanceof BlockIGINDentSmall) metaNames = Names.STONE_IGIN;
         else if(block instanceof BlockSEDDent) metaNames = Names.STONE_SED;
         else if(block instanceof BlockSEDDentSmall) metaNames = Names.STONE_SED;
-        else if(block instanceof BlockPlankDent) metaNames = Names.WOOD_ALL;
+        else if(block instanceof BlockPlankDent) metaNames = Global.WOOD_ALL;
     }
 }

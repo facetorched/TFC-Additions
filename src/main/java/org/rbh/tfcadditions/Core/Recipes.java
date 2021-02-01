@@ -1,5 +1,6 @@
 package org.rbh.tfcadditions.Core;
 
+import com.dunk.tfc.api.Constant.Global;
 import com.dunk.tfc.api.TFCItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -31,7 +32,7 @@ public class Recipes {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.SteelPlaner, 1), "SHS", "WWW", 'S', "stickWood", 'H', TFCItems.steelChiselHead, 'W', "woodLumber"));
 
         //Wood items and blocks
-        for(int i = 0; i < Names.WOOD_ALL.length; i++){
+        for(int i = 0; i < Global.WOOD_ALL.length; i++){
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Items.PlankPlaned, 1, i), new ItemStack(TFCItems.singlePlank, 1, i), "itemPlaner"));
 
             int l = i%16;

@@ -9,7 +9,7 @@ public class Reference {
 
     public static final int VersionMajor = 1;
     public static final int VersionMinor = 0;
-    public static final int VersionRevision = 5;
+    public static final int VersionRevision = 6;
 
     public static final String ModVersion = VersionMajor + "." + VersionMinor + "." + VersionRevision;
     //public static final String TFCVersion = "@TFCVERSION@";
@@ -22,4 +22,7 @@ public class Reference {
     public static final String AssetPathGui = "textures/gui/";
 
     public static final String GUI_FACTORY = "org.rbh.tfcadditions.Config.GUIFactory";
+
+    public static final String ModDependencies = "required-after:terrafirmacraftplus" +
+            ";required-after:ctmlib";
 }

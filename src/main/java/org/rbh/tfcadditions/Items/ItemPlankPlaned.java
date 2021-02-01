@@ -1,6 +1,7 @@
 package org.rbh.tfcadditions.Items;
 
 import com.dunk.tfc.Items.ItemTerra;
+import com.dunk.tfc.api.Constant.Global;
 import com.dunk.tfc.api.Enums.EnumSize;
 import com.dunk.tfc.api.Enums.EnumWeight;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -18,14 +19,14 @@ import java.util.List;
  */
 public class ItemPlankPlaned extends ItemTerra {
 
-    private IIcon[] icons = new IIcon[Names.WOOD_ALL.length];
+    private IIcon[] icons = new IIcon[Global.WOOD_ALL.length];
 
     ItemPlankPlaned(){
         super();
         this.hasSubtypes = true;
         this.setMaxDamage(0);
         setCreativeTab(CreativeTabs.TFCAdditions_Tab);
-        this.metaNames = Names.WOOD_ALL.clone();
+        this.metaNames = Global.WOOD_ALL.clone();
         this.setWeight(EnumWeight.LIGHT);
         this.setSize(EnumSize.MEDIUM);
     }
@@ -39,15 +40,15 @@ public class ItemPlankPlaned extends ItemTerra {
     @Override
     public void registerIcons(IIconRegister registerer)
     {
-        for(int i = 0; i < Names.WOOD_ALL.length; i++) {
-            icons[i] = registerer.registerIcon(Reference.ModID + ":" + "wood/"+Names.WOOD_ALL[i]+" Plank Planed");
+        for(int i = 0; i < Global.WOOD_ALL.length; i++) {
+            icons[i] = registerer.registerIcon(Reference.ModID + ":" + "wood/"+Global.WOOD_ALL[i]+" Plank Planed");
         }
     }
 
     @Override
     public void getSubItems(Item par1, net.minecraft.creativetab.CreativeTabs par2CreativeTabs, List list)
     {
-        for(int i = 0; i < Names.WOOD_ALL.length; i++) {
+        for(int i = 0; i < Global.WOOD_ALL.length; i++) {
             list.add(new ItemStack(this,1,i));
         }
     }
