@@ -30,11 +30,12 @@ import java.util.List;
 public class BlockChisel extends BlockTerra implements ICTMBlock {
 
     //@SideOnly(Side.CLIENT)
-    private List<SubmapManCTM> manager = new ArrayList<SubmapManCTM>();
+    private final List<SubmapManCTM> manager = new ArrayList<SubmapManCTM>();
 
     protected String[] names;
     protected IIcon[] icons;
-    private String blockType, chiselType;
+    private final String blockType;
+    private final String chiselType;
 
     public BlockChisel(Material material, String blockType, String chiselType)
     {

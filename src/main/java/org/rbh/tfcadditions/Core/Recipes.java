@@ -44,6 +44,10 @@ public class Recipes {
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksVert2, 1, l), " 1 ","11 ","1  ", '1', new ItemStack(TFCItems.singlePlank, 1, i)));
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksParquet2, 2, l), "11","11", '1', new ItemStack(Items.PlankPlaned, 1, i)));
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksLarge2, 2, l), "111","111","111", '1', new ItemStack(Items.PlankPlaned, 1, i)));
+            } else if(i/32 == 1){
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksVert3, 1, l), " 1 ","11 ","1  ", '1', new ItemStack(TFCItems.singlePlank, 1, i)));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksParquet3, 2, l), "11","11", '1', new ItemStack(Items.PlankPlaned, 1, i)));
+                GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksLarge3, 2, l), "111","111","111", '1', new ItemStack(Items.PlankPlaned, 1, i)));
             }
         }
     }

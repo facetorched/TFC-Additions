@@ -21,9 +21,9 @@ public class SubmapManCTM extends SubmapManagerCTM {
     private static RenderBlocksCTM rb;
 
     private TextureSubmap submap, submapSmall;
-    private String blockNames;
-    private String blockType;
-    private String chiselType;
+    private final String blockNames;
+    private final String blockType;
+    private final String chiselType;
 
     public SubmapManCTM(String names, String block, String chisel) {
         super("dummy");

@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class ItemPlankPlaned extends ItemTerra {
 
-    private IIcon[] icons = new IIcon[Global.WOOD_ALL.length];
+    private final IIcon[] icons = new IIcon[Global.WOOD_ALL.length];
 
     ItemPlankPlaned(){
         super();

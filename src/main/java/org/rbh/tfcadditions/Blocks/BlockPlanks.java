@@ -27,7 +27,8 @@ public class BlockPlanks extends BlockTerra {
 
     public enum NameType {
         FIRST_BRACKET,
-        SECOND_BRACKET
+        SECOND_BRACKET,
+        THIRD_BRACKET
     }
 
     protected String[] names;
@@ -105,7 +106,11 @@ public class BlockPlanks extends BlockTerra {
             return MetaNames;
         } else if(bracket == NameType.SECOND_BRACKET){
             MetaNames = new String[Global.WOOD_ALL.length - 16];
-            System.arraycopy(Global.WOOD_ALL, 16, MetaNames, 0, Global.WOOD_ALL.length - 16);
+            System.arraycopy(Global.WOOD_ALL, 16, MetaNames, 0, 16);
+            return MetaNames;
+        } else if(bracket == NameType.THIRD_BRACKET){
+            MetaNames = new String[Global.WOOD_ALL.length - 32];
+            System.arraycopy(Global.WOOD_ALL, 32, MetaNames, 0, Global.WOOD_ALL.length - 32);
             return MetaNames;
         }
         return null;

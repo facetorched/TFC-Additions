@@ -93,6 +93,8 @@ public class ChiselMode_Dent extends ChiselMode {
                 world.setBlock(x, y, z, Blocks.PlanksOutline, meta, 0x2);
             } else if(id == TFCBlocks.planks2 ||id == Blocks.PlanksVert2) {
                 world.setBlock(x, y, z, Blocks.PlanksOutline2, meta, 0x2);
+            } else if(id == TFCBlocks.planks3 ||id == Blocks.PlanksVert3) {
+                world.setBlock(x, y, z, Blocks.PlanksOutline3, meta, 0x2);
             }
 
             player.inventory.mainInventory[hasChisel].damageItem(1, player);

@@ -20,16 +20,20 @@ public class Blocks {
 
     public static Block PlanksOutline;
     public static Block PlanksOutline2;
+    public static Block PlanksOutline3;
 
     public static Block PlanksLarge;
     public static Block PlanksLarge2;
+    public static Block PlanksLarge3;
 
     public static Block PlanksParquet;
     public static Block PlanksParquet2;
+    public static Block PlanksParquet3;
 
     public static Block PlanksNorm;
     public static Block PlanksNorm2;
 
     public static Block PlanksVert;
     public static Block PlanksVert2;
+    public static Block PlanksVert3;
 }

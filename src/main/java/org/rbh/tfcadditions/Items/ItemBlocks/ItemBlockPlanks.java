@@ -5,6 +5,7 @@ import com.dunk.tfc.api.Constant.Global;
 import net.minecraft.block.Block;
 import org.rbh.tfcadditions.Blocks.BlockPlanks;
 import org.rbh.tfcadditions.Blocks.Dent.BlockPlank2Dent;
+import org.rbh.tfcadditions.Blocks.Dent.BlockPlank3Dent;
 import org.rbh.tfcadditions.Blocks.Dent.BlockPlankDent;
 import org.rbh.tfcadditions.Reference.Names;
 
@@ -22,11 +23,14 @@ public class ItemBlockPlanks extends ItemTerraBlock {
         }
         else if(block instanceof BlockPlank2Dent) {
             metaNames = new String[Global.WOOD_ALL.length - 16];
-            System.arraycopy(Global.WOOD_ALL, 16, metaNames, 0, Global.WOOD_ALL.length - 16);
+            System.arraycopy(Global.WOOD_ALL, 16, metaNames, 0, 16);
+        }
+        else if(block instanceof BlockPlank3Dent) {
+            metaNames = new String[Global.WOOD_ALL.length - 32];
+            System.arraycopy(Global.WOOD_ALL, 32, metaNames, 0, Global.WOOD_ALL.length - 32);
         }
         else if(block instanceof BlockPlanks){
             metaNames = ((BlockPlanks) block).getNames();
         }
     }
 }
-
