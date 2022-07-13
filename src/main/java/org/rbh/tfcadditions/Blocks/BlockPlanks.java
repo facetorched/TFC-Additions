@@ -105,7 +105,7 @@ public class BlockPlanks extends BlockTerra {
             System.arraycopy(Global.WOOD_ALL, 0, MetaNames, 0, 16);
             return MetaNames;
         } else if(bracket == NameType.SECOND_BRACKET){
-            MetaNames = new String[Global.WOOD_ALL.length - 16];
+            MetaNames = new String[16];
             System.arraycopy(Global.WOOD_ALL, 16, MetaNames, 0, 16);
             return MetaNames;
         } else if(bracket == NameType.THIRD_BRACKET){
