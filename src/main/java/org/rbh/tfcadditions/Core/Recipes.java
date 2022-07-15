@@ -1,6 +1,7 @@
 package org.rbh.tfcadditions.Core;
 
 import com.dunk.tfc.api.Constant.Global;
+import com.dunk.tfc.api.TFCBlocks;
 import com.dunk.tfc.api.TFCItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
@@ -38,14 +39,17 @@ public class Recipes {
             int l = i%16;
             if(i==l){
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksVert, 1, i), " 1 ","11 ","1  ", '1', new ItemStack(TFCItems.singlePlank, 1, i)));
+                GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(TFCItems.singlePlank, 4, i), new ItemStack(Blocks.PlanksVert, 1, i), "itemSaw"));
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksParquet, 1, i), "11","11", '1', new ItemStack(Items.PlankPlaned, 1, i)));
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksLarge, 2, i), "111","111","111", '1', new ItemStack(Items.PlankPlaned, 1, i)));
             } else if(i/16 == 1){
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksVert2, 1, l), " 1 ","11 ","1  ", '1', new ItemStack(TFCItems.singlePlank, 1, i)));
+                GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(TFCItems.singlePlank, 4, i), new ItemStack(Blocks.PlanksVert2, 1, l), "itemSaw"));
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksParquet2, 2, l), "11","11", '1', new ItemStack(Items.PlankPlaned, 1, i)));
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksLarge2, 2, l), "111","111","111", '1', new ItemStack(Items.PlankPlaned, 1, i)));
             } else if(i/32 == 1){
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksVert3, 1, l), " 1 ","11 ","1  ", '1', new ItemStack(TFCItems.singlePlank, 1, i)));
+                GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(TFCItems.singlePlank, 4, i), new ItemStack(Blocks.PlanksVert3, 1, l), "itemSaw"));
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksParquet3, 2, l), "11","11", '1', new ItemStack(Items.PlankPlaned, 1, i)));
                 GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.PlanksLarge3, 2, l), "111","111","111", '1', new ItemStack(Items.PlankPlaned, 1, i)));
             }
