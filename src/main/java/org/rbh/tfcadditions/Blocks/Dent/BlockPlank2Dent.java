@@ -13,8 +13,8 @@ public class BlockPlank2Dent extends BlockChisel {
     public BlockPlank2Dent()
     {
         super(Material.wood, "wood", "Plank Outline");
-        names = new String[Global.WOOD_ALL.length - 16];
-        System.arraycopy(Global.WOOD_ALL, 16, names, 0, Global.WOOD_ALL.length - 16);
+        names = new String[16];
+        System.arraycopy(Global.WOOD_ALL, 16, names, 0, 16);
         icons = new IIcon[names.length];
     }
 }
